@@ -3,7 +3,6 @@ const squaredNumber = document.querySelector(".squared");
 const cubedNumber = document.querySelector(".cubed");
 const factorialNumber = document.querySelector(".factorial");
 const warningText = document.querySelector(".warning")
-const enteredValue = document.querySelectorAll(".entered-num");
 function squared(number) {
     return number * number;
 }
@@ -40,6 +39,7 @@ userInput.addEventListener("change", () => {
 });
 
 function attachValue(value) { //Attaches the value to the info strings
+    const enteredValue = document.querySelectorAll(".entered-num");
     let i = 0;
     while (i < enteredValue.length){
         enteredValue[i].textContent = value;
