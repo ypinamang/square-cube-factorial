@@ -3,6 +3,13 @@
   <head>
     <title>Square-Cube-Factorial</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -11,18 +18,30 @@
     </div>
     <div class="main-area">
       <div class="prompt-area">
-        <p>Enter a number and press Enter</p>
+        <p class="ask">Enter a number and press Enter</p>
         <input type="text" class="user-input" />
+        <p class="warning text"></p>
       </div>
       <div class="info-area">
-        <div class="squared-info">
-          Squared value: <span id="squared"></span>
+        <div class="squared-info info">
+          <p class="squared">0</p>
+          <p class="property-type">
+            <span class="entered-num">0</span> Squared
+          </p>
         </div>
-        <div class="cubed-info">Cubed value: <span id="cubed"></span></div>
-        <div class="factorial-info">
-          Factorial(!) value: <span id="factorial"></span>
+        <div class="cubed-info info">
+          <p class="cubed">0</p>
+          <p class="property-type"><span class="entered-num">0</span> Cubed</p>
+        </div>
+        <div class="factorial-info info">
+          <p class="factorial">1</p>
+          <p class="property-type">
+            <span class="entered-num">0</span> Factorial (!)
+          </p>
         </div>
       </div>
     </div>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
