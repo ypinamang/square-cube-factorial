@@ -12,7 +12,7 @@ function cubed(number) {
 }
 
 function factorial(number) {
-    if (number < 0) return "undefined";
+    if (number < 0) return "Don't be silly 😜";
     if (number === 0) return 1;
     let x = number - 1;
     while (x > 1) {
